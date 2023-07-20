@@ -163,18 +163,17 @@ The first step is to load the file called `cities.csv`  that is in the folder ca
   # Display sample data
   city_data_df.head()
   ```
-Then, it will create a map that displays a point for every city in the city_data_df DataFrame. The size of the point should be the humidity in each city.
+Then, it will create a map that displays a point for every city in the city_data_df DataFrame. To display this graph it will be use a `hvplot` library and it is going to use the following parametres:
 
-To display this graph it will be use a `hvplot` library and it is going to use the following parametres.
-It will call the latitude `Lng` and longitude `Lat` variables from the DataFrame
-To display this plot a `hvplot` library will be used and the following parameters will be used.
-It will call the latitude `Lat` and longitude `Lng` variables of the DataFrame.
-`geo=True` will be an argument that could be a method to enable geodata.
-`Tiles='EsriNatGeo'` is a map style that is inspired by traditional National Geographic maps. 
-The frame size is going to be determined according to the `frame_width` and  `frame_height` parameters.
-`size='Humidity` means that each point in the map is according to the size of the values in the variable 'Humidity'.
-`color='City'` means that each city will have a different color.
-`scale=0.8` it will be the scale of each point in the map.
+* It will call the latitude `Lng` and longitude `Lat` variables from the DataFrame
+* To display this plot a `hvplot` library will be used and the following parameters will be used.
+* It will call the latitude `Lat` and longitude `Lng` variables of the DataFrame.
+* `geo=True` will be an argument that could be a method to enable geodata.
+* `Tiles='EsriNatGeo'` is a map style that is inspired by traditional National Geographic maps. 
+* The frame size is going to be determined according to the `frame_width` and  `frame_height` parameters.
+* `size='Humidity` means that each point in the map is according to the size of the values in the variable 'Humidity'.
+* `color='City'` means that each city will have a different color.
+* `scale=0.8` it will be the scale of each point in the map.
 
 After that, it will create a new DataFrame to find an ideal weather conditions. To this activity it consider that the best weather has the following criteria:
 
